@@ -20,11 +20,11 @@ JD        Green  wire (fils vert )  --------
                                             |
                                             §    (10-50KOhm)
                                             |
-                                            --------------------------A14  AIO
+                                            ----------------------A14  AIO
                                             |
                                             §    (10-50KOhm)
                                             |
-JD        Brown  wire (fils marron )  ------------------------------  GND   AIO
+JD        Brown  wire (fils marron )  -------------------------- GND   AIO
 
 ![image](https://github.com/Entropiemaximun/virtual-turnsensor-concept-for-encoder-JD6000/assets/88970536/734c824a-234e-435a-8316-813708f333f6)
 
