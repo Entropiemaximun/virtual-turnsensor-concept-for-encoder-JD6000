@@ -2,7 +2,7 @@
 
 https://youtube.com/shorts/vLLpzsV9wfQ
 
-AOG virtual-turnsensor concept  for encoder  JD6000 series  R  &amp; M
+AOG virtual-turnsensor concept  for encoder  JD6000 series  R  &amp; M  ( AL223369 >> AL233346 )
 
   JD  encoder turn sensor generate wave modification  with similar frequency  in voltmeter  we can see  some  voltage  mofdification   (  for  6R 6M)
 
