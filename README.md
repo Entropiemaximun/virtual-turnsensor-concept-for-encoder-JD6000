@@ -1,4 +1,5 @@
 # virtual-turnsensor-concept-for-encoder-JD6000
+https://youtube.com/shorts/vLLpzsV9wfQ
 AOG virtual-turnsensor concept  for encoder  JD6000 series  R  &amp; M
 
 Add  JD  encoder turn sensor  with  wave modification    (  for  6R 6M)
