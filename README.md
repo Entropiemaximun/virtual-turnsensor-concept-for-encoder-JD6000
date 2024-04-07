@@ -2,7 +2,7 @@
 https://youtube.com/shorts/vLLpzsV9wfQ
 AOG virtual-turnsensor concept  for encoder  JD6000 series  R  &amp; M
 
-Add  JD  encoder turn sensor  with  wave modification    (  for  6R 6M)
+  JD  encoder turn sensor generate wave modification  with similar frequency  in voltmeter  we can see  some  voltage  mofdification   (  for  6R 6M)
 
  on sterring  colon  ther eis  turn sensor   with connector  4  wire 
 
