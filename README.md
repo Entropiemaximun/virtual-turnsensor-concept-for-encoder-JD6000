@@ -15,7 +15,9 @@ AOG virtual-turnsensor concept  for encoder  JD6000 series  R  &amp; M
   for   AIO   with teensy  (  v4  during this  test )    -------------BricBric code    with Buched  Debug help 
   
   update  to  use A14  to    make analisis  of the wave  of JD  turn sensor  and apply  virtual turn sensor concept
-  /!\  make  sure  that   AIO  input  with connected  with  voltage divider   with 2 resistance  10~50K 
+  
+  /!\  make  sure  that   AIO  input  with connected  with  voltage divider   with 2 resistances  10~50K 
+  
   /!\  faire attention que la  carte  AIO  soit connecteé avec un pont de resistance (10~50K) pour faire un diviseur de tension  
 
 JD        Green  wire (fils vert )  --------
