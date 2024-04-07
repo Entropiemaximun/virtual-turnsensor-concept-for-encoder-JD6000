@@ -40,8 +40,11 @@ JD        Brown  wire (fils marron )  -------------------------- GND   AIO
 
   
 JD        Red  wire (fils rouge )  --------------------------  +5V Nano
+
 JD        Green  wire (fils vert )  -------------------------  A1  Nano 
+
                                                                D13  Nano  ---------------- Remote  Board
+                                                               
 JD        Brown  wire (fils marron )  ------------------------  GND  Nano ---------------- GND Board
   
 
