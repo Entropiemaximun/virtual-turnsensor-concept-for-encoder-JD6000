@@ -19,7 +19,7 @@ AOG virtual-turnsensor concept  for encoder  JD6000 series  R  &amp; M  ( AL2233
      
   /!\  make  sure  that   AIO  input  with connected  with  voltage divider   with 2 resistances  10~50K 
   
-  /!\   make the bridge in AIO Board  to connect external to teensy     P13 /A14    ( possibility to do  volatage divider here  with ground  )
+  /!\   make the bridge in AIO Board  to connect external to teensy     P13 /A14    ( possibility to do  voltage divider here  with ground  )
 
 JD        Green  wire (fils vert )  --------
                                             |
