@@ -1,0 +1,82 @@
+
+[Arduino code modification :]
+
+
+>>>>>>>>>>>>>>>>>>> Autosteer.ino
+
+>Add  detail  comment  how to use
+
+/*
+-------------BricBric code    with Buched  Debug help 
+Add  JD  encoder turn sensor  with  wave modification    (  for  6R 6M)
+  update  to  use A14  to    make analisis  of the wave  of JD  turn sensor  and apply  virtual turn sensor concept
+  /!\  make  sure  that   AIO  input  with connected  with  voltage divider   with 2 resistance  10~50K 
+  /!\  faire attention que la  carte  AIO  soit connecteé avec un pont de resistance (10~50K) pour faire un diviseur de tension  
+
+JD        Green  wire (fils vert )  --------
+                                            |
+                                            §    (10-50KOhm)
+                                            |
+                                            --------------------------A14  AIO
+                                            |
+                                            §    (10-50KOhm)
+                                            |
+JD        Brown  wire (fils marron )  ------------------------------  GND   AIO
+
+
+on  AOG   activae  "turn sensor"  set  like  5  to disengage 
+dans AOG    activer le "turn sensor"  et   mettre  une valeur comme  5 
+
+*/
+
+
+
+
+
+>> to be add   after  " #define PRESSURE_SENSOR_PIN A10" 
+
+
+//  ajout bricbric  **************
+#define seuil_tension 100  // seuil de saut qui  compare deux etats
+#define SENSOR_PIN A14  //  PIN DU TEENSY  A TESTER   A14 ou 38
+int sensor = 0;     //setpoint - actual
+int sensorOld = 0;  //keep  old  sensor value  
+uint8_t pulsecountjd = 1;  // Steering Wheel Encoder
+//  ajout bricbric  **************
+
+------------------------------------
+
+
+
+>> to be add   after  "  pinMode(PRESSURE_SENSOR_PIN, INPUT_DISABLE); "
+
+  pinMode(SENSOR_PIN, INPUT_DISABLE);   //  ajout bricbric  **************
+
+------------------------------------
+
+
+
+>> to be add   just  before  " if (steerConfig.ShaftEncoder && pulseCount >= steerConfig.PulseCountMax) {"
+
+   //  ajout   **************
+    if (steerConfig.ShaftEncoder)
+    {
+ sensor = pulseIn(SENSOR_PIN, HIGH, 5000);
+
+          if (abs(sensor - sensorOld) > seuil_tension)
+            {
+              if (pulsecountjd++ >= steerConfig.PulseCountMax)
+                {
+                      steerSwitch = 1; // reset values like it turned off
+                      currentState = 1;
+                      previous = 0;
+                }
+          }else {
+            pulsecountjd = 0 ;
+          }
+ 
+        if (pulsecountjd > 240) pulsecountjd = 240;
+      sensorOld = sensor;
+
+    }
+//  ajout   **************
