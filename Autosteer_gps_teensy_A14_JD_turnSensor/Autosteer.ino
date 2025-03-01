@@ -235,7 +235,7 @@ void autosteerSetup()
   // Disable digital inputs for analog input pins
   pinMode(CURRENT_SENSOR_PIN, INPUT_DISABLE);
   pinMode(PRESSURE_SENSOR_PIN, INPUT_DISABLE);
-  pinMode(SENSOR_PIN, INPUT_DISABLE);
+  pinMode(SENSOR_PIN, INPUT_DISABLE);   //  ajout bricbric  **************
   //set up communication
   Wire1.end();
   Wire1.begin();
